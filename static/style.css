@@ -1,0 +1,133 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cbe9d9;
+    margin: 0;
+    padding: 0;
+}
+.logout-btn {
+    background-color: rgb(247, 109, 109);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+.logout{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure the form and result are stacked vertically */
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/premium-photo/world-diabetes-day-awareness-concept-stethoscope-with-blue-ribbon-sugar-test-set_53476-6129.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    background-color: #e2ecea;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px; /* Increased max-width for better display */
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.header{
+    display: flex;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px; /* Small increase for better readability */
+}
+
+input[type="number"] {
+    width: calc(100% - 20px); /* Adjusted width for better spacing */
+    padding: 6px; /* Slightly smaller padding for better UX */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="number"]:focus {
+    border-color: #80bdff;
+    outline: none; /* Outline set to none for cleaner focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Result styling */
+.result-container {
+    margin-top: 20px;
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #e2ecea;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    max-width: 500px; /* Adjusted max-width to match the form container */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h5 {
+    margin-bottom: 3px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.result-container hr {
+    border: 0;
+    height: 1px;
+    background: #ced4da;
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.result {
+    font-size: 13px;
+    color: #007bff;
+    font-weight: bold;
+}
+
